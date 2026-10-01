@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AbimTech — Building from Nigeria</title>
+<meta name="description" content="AbimTech — Building from Nigeria. Olatunji Abimbola Emmanuel, founder building across software, AI, games, embedded systems and cybersecurity.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0a0b;--card:#121213;--card2:#18181b;--line:#222225;--text:#f4f4f5;--muted:#9f9fa9;--accent:#fff}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Inter,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased}
+.mono{font-family:"JetBrains Mono",monospace}
+.container{max-width:1100px;margin:0 auto;padding:0 24px}
+nav{position:fixed;top:0;width:100%;z-index:50;background:rgba(10,10,11,0.8);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav-inner{display:flex;justify-content:space-between;align-items:center;height:64px}
+.logo{font-weight:800;letter-spacing:-0.5px;font-size:18px}
+.nav-links{display:flex;gap:28px;font-size:13px}
+.nav-links a{color:var(--muted);text-decoration:none}
+.nav-links a:hover{color:var(--text)}
+.hero{padding:160px 0 80px;display:grid;grid-template-columns:1.2fr 0.8fr;gap:40px}
+.hero h1{font-size:68px;line-height:0.9;letter-spacing:-3px;font-weight:800}
+.hero h1 span{display:block;color:var(--muted);font-weight:400;font-size:20px;letter-spacing:0;margin-top:16px;line-height:1.4}
+.hero-right{padding-top:20px}
+.hero-desc{font-size:16px;color:var(--muted);max-width:360px;margin-bottom:28px}
+.btns{display:flex;gap:12px}
+.btn{padding:14px 22px;border-radius:999px;font-size:14px;font-weight:600;text-decoration:none;display:inline-block}
+.btn-primary{background:#fff;color:#000}
+.btn-secondary{background:var(--card2);color:#fff;border:1px solid var(--line)}
+.section{padding:90px 0;border-top:1px solid var(--line)}
+.label{font-size:12px;letter-spacing:2px;color:var(--muted);margin-bottom:20px}
+h2{font-size:42px;line-height:1;letter-spacing:-1.5px;margin-bottom:24px}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:60px}
+.about-text{font-size:18px;color:#d4d4d8}
+.about-text b{color:#fff}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.tag{padding:8px 14px;background:var(--card2);border:1px solid var(--line);border-radius:999px;font-size:12px;color:var(--muted)}
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.proj{background:var(--bg);padding:32px;min-height:320px;display:flex;flex-direction:column}
+.proj-icon{font-size:22px;margin-bottom:24px}
+.proj h3{font-size:18px;margin-bottom:12px}
+.proj p{font-size:13px;color:var(--muted);line-height:1.6}
+.proj-meta{margin-top:auto;padding-top:20px;font-size:11px;color:#666;letter-spacing:1px}
+.tech-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:30px}
+.tech{background:var(--card);padding:28px}
+.tech h4{font-size:13px;letter-spacing:1px;margin-bottom:12px}
+.tech p{font-size:13px;color:var(--muted);line-height:1.8}
+.journey{display:flex;flex-direction:column;gap:1px;background:var(--line);border:1px solid var(--line)}
+.j-row{display:grid;grid-template-columns:200px 1fr;background:var(--bg);padding:24px 32px}
+.j-row span:first-child{font-size:13px;color:var(--muted)}
+.j-row span:last-child{font-size:15px}
+.contact-box{background:var(--card);border:1px solid var(--line);padding:40px;display:flex;justify-content:space-between;align-items:center}
+.email{font-size:28px;font-weight:700;letter-spacing:-1px}
+.footer{padding:40px 0;color:var(--muted);font-size:12px;display:flex;justify-content:space-between}
+@media(max-width:900px){
+.hero{grid-template-columns:1fr;padding-top:120px}
+.hero h1{font-size:48px}
+.grid-2{grid-template-columns:1fr}
+.projects{grid-template-columns:1fr}
+.tech-grid{grid-template-columns:1fr}
+.j-row{grid-template-columns:1fr;gap:8px}
+.contact-box{flex-direction:column;align-items:flex-start;gap:20px}
+.email{font-size:22px}
+.nav-links{display:none}
+}
+.reveal{opacity:0;transform:translateY(20px);transition:0.8s}
+.reveal.active{opacity:1;transform:translateY(0)}
+</style>
+</head>
+<body>
+<nav>
+<div class="container nav-inner">
+<div class="logo">AbimTech</div>
+<div class="nav-links mono"><a href="#about">ABOUT</a><a href="#work">WORK</a><a href="#tech">TECH</a><a href="#contact">CONTACT</a></div>
+</div>
+</nav>
+
+<div class="container hero">
+<div>
+<h1>Building from Nigeria <span>· AbimTech</span></h1>
+<h1 style="font-size:20px;letter-spacing:0;font-weight:400;margin-top:32px;color:var(--muted);line-height:1.5">Building ideas into<br>real technology.</h1>
+</div>
+<div class="hero-right">
+<p class="hero-desc">I’m Olatunji Abimbola Emmanuel, a young developer and founder building across software, AI, games, embedded systems and cybersecurity. This is the home of my work, experiments and long-term projects.</p>
+<div class="btns">
+<a class="btn btn-primary" href="#work">Explore my projects</a>
+<a class="btn btn-secondary" href="#contact">Get in touch</a>
+</div>
+</div>
+</div>
+
+<div class="container section" id="about">
+<div class="label mono">01 · ABOUT</div>
+<div class="grid-2">
+<div><h2>More than<br>one stack.</h2></div>
+<div>
+<p class="about-text">I started with the web and gradually expanded into <b>software engineering, AI, game development and hardware.</b> I enjoy understanding how systems work underneath the interface — not only making them look good.</p>
+<p class="about-text" style="margin-top:20px;color:var(--muted);font-size:16px">My long-term direction combines software engineering, artificial intelligence, embedded engineering and cybersecurity. I’m building projects while learning the engineering behind them.<br><br>Through AbimTech Institute, I also want to create a path for young Africans to learn practical technology and build their own projects.</p>
+<div class="tags mono"><span class="tag">WEB DEVELOPMENT</span><span class="tag">SOFTWARE ENGINEERING</span><span class="tag">AI DEVELOPMENT</span><span class="tag">GAME PROGRAMMING</span><span class="tag">EMBEDDED SYSTEMS</span><span class="tag">ROBOTICS</span><span class="tag">CYBERSECURITY</span><span class="tag">TECH EDUCATION</span></div>
+</div>
+</div>
+</div>
+
+<div class="container section" id="work">
+<div class="label mono">02 · SELECTED WORK</div>
+<h2>Projects I’m building.</h2>
+<p style="color:var(--muted);margin-bottom:32px">A mix of software products, AI experiments, games and security engineering.</p>
+<div class="projects">
+<div class="proj reveal"><div class="proj-icon">✦</div><h3>Emma AI</h3><p>An AI application project exploring conversational AI, web search, image understanding and multimodal generation.</p><div class="proj-meta mono">AI · PYTHON · WEB · APIS</div></div>
+<div class="proj reveal"><div class="proj-icon">⌁</div><h3>X1 Malware Resolver</h3><p>A cybersecurity platform in development exploring malware scanning, real-time monitoring, threat analysis, network and web protection, quarantine and AI-assisted security workflows.</p><div class="proj-meta mono">CYBERSECURITY · PYTHON · NODE.JS · AI</div></div>
+<div class="proj reveal"><div class="proj-icon">◈</div><h3>Embedded & Robotics Lab</h3><p>Hands-on experiments with Arduino, ESP32, sensors, motors, wireless communication, OLED displays, RC aircraft and robotics.</p><div class="proj-meta mono">EMBEDDED · ELECTRONICS · ROBOTICS</div></div>
+<div class="proj reveal"><div class="proj-icon">◆</div><h3>Game Development</h3><p>Independent game projects including puzzle and arcade experiments, plus work with Godot, JavaScript/TypeScript and 3D gameplay systems.</p><div class="proj-meta mono">GODOT · JS · TS</div></div>
+<div class="proj reveal"><div class="proj-icon">▶</div><h3>AbimTech Visual</h3><p>Creative technology work exploring AI-assisted visual production, video concepts and digital media.</p><div class="proj-meta mono">AI · VISUAL · YOUTUBE</div></div>
+<div class="proj reveal"><div class="proj-icon">A</div><h3>AbimTech Institute</h3><p>A technology education initiative in development, focused on practical learning in web development, AI, games and cybersecurity.</p><div class="proj-meta mono">EDUCATION · TECHNOLOGY</div></div>
+</div>
+</div>
+
+<div class="container section" id="tech">
+<div class="label mono">03 · TECHNOLOGY</div>
+<h2>The tools behind the work.</h2>
+<div class="tech-grid mono">
+<div class="tech"><h4>FRONTEND</h4><p>HTML · CSS · JavaScript · TypeScript · React</p></div>
+<div class="tech"><h4>BACKEND</h4><p>Node.js · Python · APIs · application architecture</p></div>
+<div class="tech"><h4>AI</h4><p>Python · PyTorch · Transformers · local and cloud AI workflows</p></div>
+<div class="tech"><h4>GAMES</h4><p>Godot · JavaScript · TypeScript · 3D gameplay systems</p></div>
+<div class="tech"><h4>HARDWARE</h4><p>Arduino · ESP32 · NRF24L01 · sensors · motors · OLED</p></div>
+<div class="tech"><h4>SECURITY</h4><p>Threat detection · monitoring · YARA / ClamAV workflows · security tooling</p></div>
+</div>
+</div>
+
+<div class="container section">
+<div class="label mono">04 · JOURNEY</div>
+<h2>Learning by building.</h2>
+<div class="journey" style="margin-top:32px">
+<div class="j-row"><span class="mono">WEB → SOFTWARE</span><span>Built websites and applications, then expanded into Node.js, Python, TypeScript and larger full-stack projects.</span></div>
+<div class="j-row"><span class="mono">AI DEVELOPMENT</span><span>Started building Emma AI and experimenting with models, AI APIs, search, image understanding and local inference.</span></div>
+<div class="j-row"><span class="mono">HARDWARE ENGINEERING</span><span>Moved into electronics, microcontrollers, sensors, motors, wireless control, robotics and RC aircraft systems.</span></div>
+<div class="j-row"><span class="mono">CYBERSECURITY</span><span>Started turning security interests into engineering projects, including the X1 Malware Resolver concept and security tooling.</span></div>
+<div class="j-row"><span class="mono">ABIMTECH INSTITUTE</span><span>Developing a long-term technology education initiative designed to help young people learn by creating real projects.</span></div>
+</div>
+</div>
+
+<div class="container section" id="contact">
+<div class="label mono">05 · CONTACT</div>
+<h2>Let’s build.</h2>
+<div class="contact-box" style="margin-top:32px">
+<div>
+<p class="mono" style="font-size:12px;color:var(--muted);margin-bottom:12px">FOR PROJECT CONVERSATIONS, COLLABORATION OR TECHNOLOGY-RELATED ENQUIRIES</p>
+<a class="email" href="mailto:golatunji31@gmail.com">golatunji31@gmail.com</a>
+<p class="mono" style="font-size:13px;margin-top:16px;color:var(--muted)">AbimTech<br>Akure, Ondo State, Nigeria</p>
+</div>
+<div><a class="btn btn-secondary mono" href="https://www.youtube.com/@AbimTechVisual" target="_blank">AbimTech Visual on YouTube ↗</a></div>
+</div>
+<div class="footer mono"><span>© 2026 Olatunji Abimbola Emmanuel · AbimTech<br>Built in Nigeria with curiosity, code and experiments.</span><span>ABIMTECH.IS-A.DEV</span></div>
+</div>
+
+<script>
+// simple reveal on scroll
+const obs = new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('active')})},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body>
+  </html>
